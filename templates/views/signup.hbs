@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/signup.css">
+    <link rel="stylesheet" href="/css/error.css">
+    <title>Sign up | Peyam</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="signup-message">Signup Form</h1>
+        <p class="signup-message1">It's quick and easy</p>
+
+
+        <form action="/signup" method="post" id="signup-form">
+            <div class="signup-settings">
+                <input type="text" id="nameAndlastname" placeholder="Name" name="name">
+            </div>
+
+            <div class="signup-settings">
+                <input type="text" id="nameAndlastname" placeholder="lastname" name="lastname">
+            </div>
+
+            <div class="signup-settings">
+                <input type="text" id="username" placeholder="enter a username" name="username">
+            </div>
+
+            <div class="signup-settings">
+                <input type="email" id="email" placeholder="Email adress" name="email"><br>
+            </div>
+
+            <div class="signup-settings">
+                <input type="text" id="password" placeholder="Password" name="password">
+                {{!-- {{#if message}}
+                <p id="error">please enter password</p>
+                {{/if}} --}}
+            </div>
+
+            <div class="signup-settings">
+                <input type="text" id="password1" placeholder="Confirm password" name="passwordConfirm">
+                {{!-- {{#if message}}
+                <p id="error">passwords do not match</p>
+                {{/if}} --}}
+            </div>
+            <button type="submit" id="btn">Sign up</button><br><br>
+        </form>
+
+        <div>
+            <span class="mess-login">Already have a account? <a href="/login" class="mess-login-now">Login now</a></span>
+        </div><br>
+
+    </div>
+
+    {{#if message}}
+    <p id="error">{{message}}</p>
+    {{/if}}
+
+
+
+    {{!--
+    <script src="/js/signup.js"></script> --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

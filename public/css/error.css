@@ -1,0 +1,31 @@
+#error{
+    color: #D8000C;
+    background-color: #FFD2D2;
+    height: 30px;
+    text-align: center;
+    padding-top: 3px;
+    margin-left: 470px;
+    margin-right: 470px;
+    margin-top: 20px;
+    border-radius:2px;
+    font-size: 15px;
+
+}
+.error{
+    color: #D8000C;
+    background-color: #FFD2D2;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    border-radius:2px;
+    font-size: 15px;
+
+}
+
+.signup-settings
+{
+    margin-bottom: 10px;
+}

@@ -1,0 +1,54 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+
+.container
+{
+    margin-left: 400px;
+    margin-top: 150px;
+    height:300px;
+    width: 500px;
+    background-color: white;
+    padding:100px;
+    border: none;
+    border-radius:5px;
+}
+
+.login{
+    height:40px;
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    width: 300px;
+    border: none;
+    border-radius:5px;
+    color: white;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.signup{
+    height:40px;
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    width: 300px;
+    border: none;
+    border-radius:5px;
+    color: white;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+    font-size:20px;
+}

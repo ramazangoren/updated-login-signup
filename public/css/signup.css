@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+
+.container 
+{
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border-radius:10px;
+}
+
+.signup-message
+{
+    padding-top: 20px;
+    font-size: 30px;
+    font-weight: 550;
+    margin-bottom: 5px;
+    font-family:  sans-serif;
+}
+
+.signup-message1
+{
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family:  sans-serif;
+    color: #696969;
+    font-weight: 300;
+}
+
+
+#email, #password,#password1, #nameAndlastname, #username
+{
+    width: 300px;
+    height: 35px;
+    border-radius:5px;
+    border: 1.5px solid #ccc;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+.x
+{
+    color: #FFFF; 
+    margin-bottom: 15px;
+} 
+
+.login-error
+{
+    color: #D8000C;
+    background-color: #FFD2D2;
+    height: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius:2px;
+    font-size: 15px;
+}
+
+.login-error-input
+{
+    background-color: #FFD2D2;
+    border: 3px solid #D8000C;
+}
+
+
+#btn
+{
+    height:40px;
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    width: 300px;
+    border: none;
+    border-radius:5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.forgotPassword
+{
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color:rgb(242, 112, 156);
+    text-decoration: none;
+}
+
+.mess-login
+{
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    margin-top: 2px;
+    font-size:18px;
+}
+
+.mess-login-now
+{
+    text-decoration: none;
+    color:rgb(242, 112, 156);
+}
+
+

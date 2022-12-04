@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+
+.container 
+{
+     background-color: white;
+     height: 450px;
+     width: 400px;
+     margin: auto;
+     margin-top: 100px;
+     text-align: center;
+     border-radius:10px;
+}
+
+.login-message
+{
+    padding-top: 30px;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    font-family:  sans-serif;
+}
+
+#email, #password
+{
+    width: 300px;
+    height: 40px;
+    border-radius:5px;
+    border: 1.5px solid #ccc;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+
+.x
+{
+    /* visibility: hidden; */
+    color: #FFFF;
+}
+
+#errforPass
+{
+    position: relative;
+    top: -20px;
+}
+
+
+.login-error
+{
+    color: #D8000C;
+    background-color: #FFD2D2;
+    height: 20px;
+    /* padding-top: 3px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius:2px;
+    font-size: 15px;
+    /* display: block; */
+}
+
+.login-error-input
+{
+    background-color: #FFD2D2;
+    border: 3px solid #D8000C;
+}
+
+
+#btn
+{
+    height:40px;
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+    width: 300px;
+    border: none;
+    border-radius:5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.forgotPassword
+{
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color:rgb(242, 112, 156);
+    text-decoration: none;
+}
+
+.mess-signup
+{
+    float: left;
+    margin-left: 90px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    margin-top: 2px;
+    font-size:18px;
+}
+
+.mess-signup-now
+{
+    text-decoration: none;
+    color:rgb(242, 112, 156);
+}
+
+
+ .fa-eye
+{
+    position: relative;
+    right: -124px;
+    top: -35px;
+    font-size:18px;
+    color:rgb(166, 78, 169);
+}
+
+
