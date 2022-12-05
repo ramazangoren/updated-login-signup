@@ -1,5 +1,4 @@
 const mysql = require('mysql');
-const nodemailer = require('nodemailer');
 
 const pool = mysql.createPool({
     limit: 1000000,
@@ -19,8 +18,28 @@ const login = (req, res) => {
     res.render('login');
 }
 
+
 const userLogin = (req, res) => {
-res.render('home')
+    
+    pool.getConnection((error, connection)=>{
+        //const info = req.body;
+        //const email = info.email; 
+        if (error) throw error;
+        const email = req.body.email;
+        const password = req.body.password;
+        const sql ="SELECT * FROM users where email ='" + email +"' AND password_ ='" +password +"';"
+        //const sql = `SELECT * FROM users WHERE email=${info.email} AND password_=${info.password}`;
+        connection.query(sql,[email, password],(error,results)=>{
+            if (error) throw error;
+            if (results.length > 0) {
+                console.log(email, password);
+                res.render("home");
+            }
+            else {
+                res.render('login', {message: 'wrong password or email'})
+            }
+        })
+    })
 }
 
 
@@ -55,9 +74,7 @@ const register = (req, res) => {
                 if (error) throw error;
                 else
                 {
-                    return res.render('signup', {
-                        message: 'user registered'
-                    })
+                    return res.redirect('login')
                 }
             })
         })

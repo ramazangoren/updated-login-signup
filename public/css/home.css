@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(to right, rgb(71, 27, 242), rgb(156, 62, 221));
+}
+
+.container
+{
+    margin-left: 450px;
+    margin-top: 100px;
+}
+.message{
+    font-size: 50px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+
+
+.message_
+{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.message_welcome
+{
+    font-size: 100px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-top: 150px;
+}
