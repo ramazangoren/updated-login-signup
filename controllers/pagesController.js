@@ -22,18 +22,14 @@ const login = (req, res) => {
 const userLogin = (req, res) => {
     
     pool.getConnection((error, connection)=>{
-        //const info = req.body;
-        //const email = info.email; 
         if (error) throw error;
         const email = req.body.email;
         const password = req.body.password;
         const sql ="SELECT * FROM users where email ='" + email +"' AND password_ ='" +password +"';"
-        //const sql = `SELECT * FROM users WHERE email=${info.email} AND password_=${info.password}`;
-        connection.query(sql,[email, password],(error,results)=>{
+        connection.query(sql,[email, password],(error,results, data)=>{
             if (error) throw error;
             if (results.length > 0) {
-                console.log(email, password);
-                res.render("home");
+                res.render("home", {data});
             }
             else {
                 res.render('login', {message: 'wrong password or email'})
